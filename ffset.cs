@@ -1,7 +1,10 @@
 using System;
-// 18-02-2022 23:54:03
 
-namespace blazedumper {
+// 2022-02-19 17:22:51.412128100 UTC
+
+namespace hazedumper
+{
+    public const Int32 timestamp = 1645291371;
     public static class netvars
     {
         public const Int32 cs_gamerules_data = 0x0;
@@ -18,7 +21,9 @@ namespace blazedumper {
         public const Int32 m_aimPunchAngleVel = 0x3048;
         public const Int32 m_angEyeAnglesX = 0x117D0;
         public const Int32 m_angEyeAnglesY = 0x117D4;
+        public const Int32 m_bBombDefused = 0x29C0;
         public const Int32 m_bBombPlanted = 0x9A5;
+        public const Int32 m_bBombTicking = 0x2990;
         public const Int32 m_bFreezePeriod = 0x20;
         public const Int32 m_bGunGameImmunity = 0x9990;
         public const Int32 m_bHasDefuser = 0x117DC;
@@ -38,8 +43,6 @@ namespace blazedumper {
         public const Int32 m_dwBoneMatrix = 0x26A8;
         public const Int32 m_fAccuracyPenalty = 0x3340;
         public const Int32 m_fFlags = 0x104;
-        public const Int32 m_fRoundStartTime = 0x4C;
-        public const Int32 m_fWarmupPeriodEnd = 0x24;
         public const Int32 m_flC4Blow = 0x29A0;
         public const Int32 m_flCustomAutoExposureMax = 0x9E0;
         public const Int32 m_flCustomAutoExposureMin = 0x9DC;
@@ -61,12 +64,13 @@ namespace blazedumper {
         public const Int32 m_hObserverTarget = 0x339C;
         public const Int32 m_hOwner = 0x29DC;
         public const Int32 m_hOwnerEntity = 0x14C;
+        public const Int32 m_hViewModel = 0x3308;
         public const Int32 m_iAccountID = 0x2FD8;
         public const Int32 m_iClip1 = 0x3274;
-        public const Int32 m_iCompetitiveRankType = 0x1C8C;
         public const Int32 m_iCompetitiveRanking = 0x1A84;
         public const Int32 m_iCompetitiveWins = 0x1B88;
         public const Int32 m_iCrosshairId = 0x11838;
+        public const Int32 m_iDefaultFOV = 0x333C;
         public const Int32 m_iEntityQuality = 0x2FBC;
         public const Int32 m_iFOV = 0x31F4;
         public const Int32 m_iFOVStart = 0x31F8;
@@ -76,18 +80,17 @@ namespace blazedumper {
         public const Int32 m_iItemIDHigh = 0x2FD0;
         public const Int32 m_iMostRecentModelBoneCounter = 0x2690;
         public const Int32 m_iObserverMode = 0x3388;
-        public const Int32 m_iPrimaryReserveAmmoCount = 0x327C;
-        public const Int32 m_iRoundTime = 0x44;
         public const Int32 m_iShotsFired = 0x103E0;
         public const Int32 m_iState = 0x3268;
         public const Int32 m_iTeamNum = 0xF4;
         public const Int32 m_lifeState = 0x25F;
+        public const Int32 m_nBombSite = 0x2994;
         public const Int32 m_nFallbackPaintKit = 0x31D8;
         public const Int32 m_nFallbackSeed = 0x31DC;
         public const Int32 m_nFallbackStatTrak = 0x31E4;
         public const Int32 m_nForceBone = 0x268C;
-        public const Int32 m_nSurvivalTeam = 0x10410;
         public const Int32 m_nTickBase = 0x3440;
+        public const Int32 m_nViewModelIndex = 0x29D0;
         public const Int32 m_rgflCoordinateFrame = 0x444;
         public const Int32 m_szCustomName = 0x304C;
         public const Int32 m_szLastPlaceName = 0x35C4;
@@ -96,6 +99,7 @@ namespace blazedumper {
         public const Int32 m_vecVelocity = 0x114;
         public const Int32 m_vecViewOffset = 0x108;
         public const Int32 m_viewPunchAngle = 0x3030;
+        public const Int32 m_zoomLevel = 0x33E0;
     }
     public static class signatures
     {
@@ -144,7 +148,7 @@ namespace blazedumper {
         public const Int32 dwZoomSensitivityRatioPtr = 0xDC1158;
         public const Int32 dwbSendPackets = 0xD94C2;
         public const Int32 dwppDirect3DDevice9 = 0xA5050;
-        public const Int32 find_hud_element = 0x623349F0;
+        public const Int32 find_hud_element = 0x595949F0;
         public const Int32 force_update_spectator_glow = 0x3BB05A;
         public const Int32 interface_engine_cvar = 0x3E9EC;
         public const Int32 is_c4_owner = 0x3C8110;
@@ -157,4 +161,4 @@ namespace blazedumper {
         public const Int32 set_abs_angles = 0x1E5330;
         public const Int32 set_abs_origin = 0x1E5170;
     }
-} // namespace blazedumper
+} // namespace hazedumper
