@@ -1,6 +1,0 @@
-Nearest="1337"
-Head="8"
-Neck="7"
-Upper Chest="6"
-Middle Chest="5"
-Lower Chest="4"
